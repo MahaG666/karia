@@ -15,32 +15,41 @@ $(function(){
     $('.menu-icon').click(function(){
         $('nav li').toggleClass('hide');
     });
-    
-$('.slider').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
+    $('.slider').slick({
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() >= 650){
+            $('.scroll').show();
+        }else{
+            $('.scroll').fadeOut();
+        }
+    });
+    $('.scroll').on('click', function(){
+        $('html,body').animate({scrollTop : 0});
+    });
   });
 
 

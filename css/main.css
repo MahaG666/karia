@@ -24,7 +24,7 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .showXs li:hover a{color: #fe435b; padding-right: 10px}
 .showXs li a{color: #555}
 .search{padding-right: 40px; margin-bottom: 6px; cursor: pointer}
-.search-div{width: 100%; height: 45px; background-color: #fe435b; display: none}
+.search-div{width: 100%; height: 45px; background-color: rgba(254, 67, 91); display: none}
 .form-control{width: 80%; height: 100%;margin-right: 5px; border-top-left-radius: 50px; border-bottom-left-radius: 50px; background-color: #fbf4f4}
 .search-div input{float: right}
 .search-icon{color: #ddd; font-size: 15px; margin-top: 16px; margin-right: 10vw}
@@ -98,3 +98,7 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .footer-tags li{display: inline-block; background-color: #fe435b; height: 40px; padding-right: 20px; padding-left: 20px; margin-bottom: 4px; transition: all .2s ease-in-out}
 .footer-tags li:hover{opacity: .8}
 .footer-tags li a{color: #fff; text-decoration: none; display: inline-block}
+/* Div Scroll */
+.scroll{position: fixed; width: 40px; height: 40px; background-color: rgba(254, 67, 91, .7); left: 15px; bottom: 15px; text-align: center; line-height: 42px;border-radius: 50%; cursor: pointer; transition: .2s; display: none}
+.scroll:hover{background-color:  rgba(254, 67, 91)}
+.scroll i{font-size: 20px; color: #ddd}
