@@ -1,0 +1,59 @@
+/*Start Header */
+.about-header{background: url(../imgs/Parrot%20.jpg) no-repeat center center; background-size: cover; width: 100%; height: 90vh}
+.home-content{position: absolute; top: 470px; right: 100px}
+.home-content .about-title h1{font-size: 3.8em; color: #c5c2c2}
+.home-content .about-list ul li{display: inline-block}
+.home-content .about-list ul li a{color: #c5c2c2; padding: 5px; text-decoration: none; transition: all .2s ease-in-out}
+.home-content .about-list ul li a:hover{color: rgba(254, 67, 91, .7)}
+.home-content .about-list ul li.transfer::after{content: '/'; margin-right: 3px}
+.about-list{margin-right: -41px}
+@media(max-width: 767px){
+    .home-content{right: 30px; top: 440px}
+    .about-header{height: 87vh}
+}
+
+/* Start About Title Section*/
+.about-section{padding-top: 80px; padding-bottom: 90px; background-color: #fff}
+.about-section h2{color: #222; font-size: 3.2em}
+.about-section .about-pgph{font-size: 1.5em; padding-bottom: 50px; color: #9ca0af}
+.about-section .about-pgph-content{color: #9ca0af; line-height: 2; }
+.about-section .about-img img{width: 100%; height: 100%}
+.about-section .about-btn{border: 0; padding: 13px 35px; background-color: rgba(254, 64, 91, 0.79); color: #fff; font-weight: bold; margin-top: 47px}
+.about-section .about-btn:hover{color: rgba(254, 64, 91, 0.79)}
+@media(max-width: 991px){.about-section .about-img img{padding-bottom: 30px}}
+
+/* Start Mountains Section */
+.mountains{background: url(../imgs/401006_icy-mountains-wallpapers-top-wallpapers-desktop_1600x1000_h.jpg); background-size: cover; width: 100%; position: relative}
+.mountains-content{position: relative; padding-top: 80px}
+.mountains-content h2{font-size: 3.5em; padding-bottom: 6px}
+.mountains-content p:nth-of-type(1){font-size: 1.5em; color: #a9adb9; padding-bottom: 30px}
+.mountains-content p:nth-of-type(2){font-size: 15px; padding: 0px 100px; line-height: 2; padding-bottom: 70px}
+.mountains-icon i{font-size: 55px; padding-bottom: 50px}
+.mountains-icon p{font-size: 35px; font-family: 'Montserrat', sans-serif;}
+.mountains-icon h3{padding-bottom: 80px}
+@media(max-width: 767px){.mountains-content p:nth-of-type(2){padding: 0px 30px 40px}}
+
+/*Start Services Section*/
+.services{padding-top: 80px; background-color: #fff}
+.services h2{color: #222; padding-bottom: 10px}
+.services p:nth-child(2){color: #9ca0af; padding-bottom: 60px}
+.services .services-content{padding-bottom: 70px}
+.services .services-content i{font-size: 70px; padding-left: 20px; padding-bottom: 15px; transition: all .2s ease-in-out}
+.services .services-content span{font-size: 15px; color: #131a2f; font-size: 17px}
+.services .services-content p{color: #a0a0a0; line-height: 2; padding-bottom: 20px}
+.services .services-content button{background-color: transparent; border: 0; color: #131a2f; padding: 0px 10px; margin-right: -10px; position: relative; transition: all .2s ease-in-out; overflow: hidden}
+.services .services-content button:hover{color: #fe3c52}
+.services .services-content button::after{content: ''; width: 100%; height: 100%; position: absolute; background-color: #fe3c52; left: 75px; opacity: .9; transition: all .6s ease-in-out}
+.services .services-content button:hover::after{transform: translateX(-150px)}
+.services .services-content:hover.services-content i{color: rgba(254, 64, 91, 0.79)}
+@media(max-width: 767px){
+    .services .services-content{padding: 30px 10px}
+}
+
+
+
+
+
+
+
+

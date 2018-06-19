@@ -1,6 +1,6 @@
-body{direction: rtl; padding-top: 66px; color: #ddd}
+body{direction: rtl; padding-top: 66px; color: #ddd; position: relative}
 *::selection{color: #fff; background: rgba(254, 64, 91, 0.79)}
-.hide{transform: scale(0); transition: all .3s ease-in-out}
+.hideElement{transform: scale(1.1); transition: all .3s ease-in-out}
 .scrolled{opacity: .8}
 .navbar{height: 66px; border-radius: 0; line-height: 65px}
 .navbar-inverse .navbar-brand{color: #ddd; font-size: 20px}
@@ -8,7 +8,7 @@ nav ul > li{display: inline-block; padding-left: 8vw; font-size: 16px; font-weig
 nav li > a{color: #ddd; transform-origin: 100% 50%; transition: all .2s ease-in-out}
 nav li > a:hover, nav li > a:focus{color: #fe435b}
 .menu-icon{display: inline-block; margin-bottom: -10px; cursor: pointer}
-@media(min-width: 300px) and (max-width: 767px){
+@media(min-width: 266px) and (max-width: 767px){
     .container > .navbar-header{float: right}
     nav ul{float: left}
     nav ul > li{display: block}
@@ -17,29 +17,34 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .change .menu1{transform: rotate(45deg) translate(6px, 6px)}
 .change .menu2{opacity: 0}
 .change .menu3{transform: rotate(-45deg) translate(7px, -7px)}
-.showXs{width: 120px; height: 160px; background-color: #eee; position: absolute; display: none}
-.showXs ol{padding: 0px; font-weight: bolder; padding: 10px}
-.showXs li {margin-bottom: -35px; margin-top: -9px}
-.showXs li a{transition: all .3s ease-in-out}
-.showXs li:hover a{color: #fe435b; padding-right: 10px}
-.showXs li a{color: #555}
 .search{padding-right: 40px; margin-bottom: 6px; cursor: pointer}
 .search-div{width: 100%; height: 45px; background-color: rgba(254, 67, 91); display: none}
 .form-control{width: 80%; height: 100%;margin-right: 5px; border-top-left-radius: 50px; border-bottom-left-radius: 50px; background-color: #fbf4f4}
 .search-div input{float: right}
 .search-icon{color: #ddd; font-size: 15px; margin-top: 16px; margin-right: 10vw}
 @media(min-width: 349px) and (max-width: 767px){.search-div{margin-top: -1px}}
-.header{background-image: url(../imgs/thumb-1920-276051.jpg); width: 100%; height: 611px; background-size: cover; position: relative; margin-top: -20px}
+/* Start Header */
+.header{background-image: url(../imgs/thumb-1920-276051.jpg); width: 100%; height: 627px; background-size: cover; position: relative; margin-top: -20px; overflow: hidden}
 .overlay{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .3); transition: all .4s ease-in-out}
 .overlay:hover{opacity: 0}
-.content{padding: 120px;color: #fff; position: absolute}
+.header .content{padding: 120px 50px;color: #fff; position: absolute}
+@media(max-width: 767px){
+    .header{height: 530px}
+    .header .content{text-align: center}
+}
+@media(min-width: 266px) and (max-width: 298px){
+    .header{height: 700px}
+}
 .content h1{font-size: 70px; padding-bottom: 10px}
 .content p{font-size: 20px}
-@media(min-width: 300px) and (max-width: 515px){.content{padding: 60px}
-    .content h1{font-size:55px}}
+@media(min-width: 300px) and (max-width: 515px){
+    .content{padding: 60px}
+    .content h1{font-size:55px}
+}
+/* Start After Header Section */
 .after-header h1{color: #222; padding: 40px 0 5px}
 .after-header p{color: #999; padding-bottom: 60px; font-weight: bold}
-.img1, .img2, .img3, .img4{position: relative; overflow: hidden; margin-bottom: 70px}
+.img1, .img2, .img3, .img4{position: relative; overflow: hidden; margin-bottom: 40px}
 .cntnt{position: absolute; bottom: -38px; right: 20px; color: #fff; font-weight: bold; transition: all .3s ease-in-out}
 .img1:hover .cntnt{bottom: 15px}
 .img2:hover .cntnt{bottom: 15px}
@@ -50,29 +55,36 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .col1 h1, .col2 h1{font-size: 150px; padding-top: 60px; margin-bottom:  -15px}
 .col1 p, .col2 p{padding: 8px 90px; line-height: 28px; margin-bottom: 10px}
 .section2 button{border: none; background-color: #131a2f; font-size: 17px; font-weight: bold; width: 150px; height: 60px; margin-bottom: 30px}
-@media(min-width: 300px) and (max-width: 812px){.section2{height: 860px}}
-@media(min-width: 813px) and (max-width: 867px){.section2{height: 660px}}
-@media(min-width: 868px) and (max-width: 989px){.section2{height: 620px}}
-@media(min-width: 990px) and (max-width: 1176px){.section2{height: 600px}}
-@media(min-width: 397px) and (max-width: 767px){.section2{height: 860px}}
+@media(min-width: 298px) and (max-width: 812px){.section2{height: 860px}}
+@media(min-width: 298px) and (max-width: 867px){.section2{height: 660px}}
+@media(min-width: 298px) and (max-width: 989px){.section2{height: 620px}}
+@media(min-width: 298px) and (max-width: 1176px){.section2{height: 600px}}
+@media(min-width: 298px) and (max-width: 767px){.section2{height: 860px}}
+@media(min-width: 198px) and (max-width: 352px){
+    .col1 h1, .col2 h1{font-size: 100px}
+    .section2{height: 790px}
+}
+@media(min-width: 768px) and (max-width: 867px){
+    .section2{height: 660px}
+}
 
-.parrot{background: url(../imgs/Parrot%20.jpg) no-repeat center center fixed; width: 100%; height: 650px; background-size: cover; margin-top: -20px; position: relative}
+/* Start Parrot Section */
+.parrot{background: url(../imgs/Parrot%20.jpg) no-repeat center center fixed; width: 100%; background-size: cover; padding-bottom: 155px; margin-top: -20px; position: relative}
 .overlay2{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .5)}
-.parrot-content{position: absolute; text-align: center; right: 33vw}
+.parrot-content{position: relative}
 .parrot h1{padding-top: 20vh}
 .parrot p{color: #fff; font-size: 15px;font-weight: 500; padding: 5px}
 .circle{border: 1px solid #fff; width: 150px; height: 150px; border-radius: 50%; margin: auto; margin-top: 30px; transition: all .2s ease-in-out}
 .circle:hover{background-color: rgba(255, 255, 255, .1)}
 .circle i{color: #fff; line-height: 150px; font-size: 55px; margin-left: 15px}
-@media(min-width: 300px) and (max-width: 757px){.parrot-content{left: 25vw}}
-@media(min-width: 758px) and (max-width: 1130px){.parrot-content{left: 25vw}}
+/*Strat Popular Section */
 .popular{padding-top: 20px; padding-bottom: 40px}
 .popular h1{padding: 80px 0 10px; color: #444}
 .popular p{font-weight: bold; color: #999; padding-bottom: 60px}
 
-.slick h1{color: #222; padding-bottom: 10px}
-.slick p{color: #999; font-size: 15px; font-weight: bold}
 /* START SLICK */
+.slick h1{color: #222; padding-bottom: 10px}
+.slick p{color: #999; font-size: 15px; font-weight: bold; padding: 0px 12px}
 .slider{width: 100%; margin: 50px auto 8px}
 .slick-slide{margin: 0px 20px}
 .slick-slide img{width: 100%}
@@ -83,22 +95,62 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 [dir='rtl']	.slick-prev{right: 28px; left: auto; z-index: 2; top: 342px; width: 90px; height: 90px; border-radius: 50%; background-color: rgba(254, 67, 91); transition: all .1s ease-in-out}
 [dir='rtl']	.slick-prev:hover{background-color: rgba(254, 67, 91, 0.83)}
 .slick-slide{margin: 0px 3px}
-/*.slick-initialized .slick-slide{width: 100px}*/
 /* END SLICK */
+
+/* Start Footer Section */
 .footer{background-color: #080d1d}
 .footer h3{color: #fff; padding-top: 10vh; padding-bottom: }
 .footer p:nth-of-type(1){margin-bottom: 30px}
 .footer p:nth-of-type(2){color: #7d8293; line-height: 2.5; margin-bottom: 40px}
 .footer p:nth-of-type(3){color: #7d8293; margin-bottom: 12vh}
 .media-object{margin-bottom: 20px; margin-left: 20px}
-.media-heading{margin-bottom: 13px}
+.media-heading{margin-bottom: 13px; transition: all .2s ease-in-out}
+.media-heading:hover{cursor: pointer; color: #fe3c52; opacity: .8}
 .media-body h4{color: #7d8293}
-.media-body span{color: #fe435b}
+.media-body span{color: #fe3c52; opacity: .8}
+@media(max-width: 767px){.media h3{text-align: center}}
 .footer-tags ul{margin-right: -90px; line-height: 3; padding-top: 8vh}
 .footer-tags li{display: inline-block; background-color: #fe435b; height: 40px; padding-right: 20px; padding-left: 20px; margin-bottom: 4px; transition: all .2s ease-in-out}
 .footer-tags li:hover{opacity: .8}
 .footer-tags li a{color: #fff; text-decoration: none; display: inline-block}
+@media(max-width: 767px){
+    .footer-tags h3{text-align: center}
+    .footer-tags ul{margin-right: -40px}
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .footer-tags h3{text-align: center}
+    .footer-tags ul{margin-right: -40px}
+    .media h3{text-align: center}
+    .end h3, .end p:nth-of-type(1){text-align: center}
+}
+@media(max-width: 767px){.end h3, .end p{text-align: center}}
+@media(min-width: 298px) and (max-width: 331px){
+    .search{float: left; margin-top: 20px}
+    .navbar-header{float: right}
+    .header{height: 700px}
+    
+}
 /* Div Scroll */
-.scroll{position: fixed; width: 40px; height: 40px; background-color: rgba(254, 67, 91, .7); left: 15px; bottom: 15px; text-align: center; line-height: 42px;border-radius: 50%; cursor: pointer; transition: .2s; display: none}
+.scroll{position: fixed; width: 40px; height: 40px; background-color: rgba(254, 67, 91, .7); right: 20px; bottom: 20px; text-align: center; line-height: 42px;border-radius: 50%; cursor: pointer; transition: .2s; display: none}
 .scroll:hover{background-color:  rgba(254, 67, 91)}
 .scroll i{font-size: 20px; color: #ddd}
+
+/* Start Navigation Div */
+.navigation{position: fixed;width: 40%;height: 100%;left: 0px;top: 0;background:#fff; margin-top: 65px; transition: all .3s ease-in-out; display: none}
+.navigation .navigation-btn{color: #3a3a3a; border: 2px solid rgba(19,26,47,0.5); padding: 1.8vh 5vw; margin: 50px 30px 20px 0}
+.navigation > a i{position: absolute; right: 6vw; top: 10vh; color: #3a3a3a; font-size: 22px; cursor: pointer}
+.navigation-list ul{margin-right: 10px}
+.navigation-list ul li a{color: #3a3a3a; text-decoration: none; transition: all .3s ease-in-out}
+.navigation-list ul li a:hover{color: #fe435b}
+.navigation-list ul li{font-weight: bold; font-size: 2.2em; padding-top: 20px}
+@media(min-width: 266px) and (max-width: 730px){
+    .navigation{width: 100%}
+    .navigation .navigation-btn{width: 500px}
+}
+@media(min-width: 266px) and (max-width: 550px){
+    .navigation .navigation-btn{width: 248.3px}
+    .navigation > a i{right: 15vw}
+}
+@media(min-width: 332px) and (max-width: 767px){
+    .header{height: 580px}
+}
