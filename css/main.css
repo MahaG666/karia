@@ -105,8 +105,9 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .footer p:nth-of-type(3){color: #7d8293; margin-bottom: 12vh}
 .media-object{margin-bottom: 20px; margin-left: 20px}
 .media-heading{margin-bottom: 13px; transition: all .2s ease-in-out}
-.media-heading:hover{cursor: pointer; color: #fe3c52; opacity: .8}
+.media-heading:hover{color: #fe3c52; opacity: .8}
 .media-body h4{color: #7d8293}
+.media-body a{text-decoration: none}
 .media-body span{color: #fe3c52; opacity: .8}
 @media(max-width: 767px){.media h3{text-align: center}}
 .footer-tags ul{margin-right: -90px; line-height: 3; padding-top: 8vh}
@@ -136,13 +137,22 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .scroll i{font-size: 20px; color: #ddd}
 
 /* Start Navigation Div */
-.navigation{position: fixed;width: 40%;height: 100%;left: 0px;top: 0;background:#fff; margin-top: 65px; transition: all .3s ease-in-out; display: none}
+.navigation{position: fixed;width: 40%;height: 100%;left: 0px;top: 0;background:#fff; margin-top: 65px; transition: all .5s ease-in-out; display: none}
 .navigation .navigation-btn{color: #3a3a3a; border: 2px solid rgba(19,26,47,0.5); padding: 1.8vh 5vw; margin: 50px 30px 20px 0}
-.navigation > a i{position: absolute; right: 6vw; top: 10vh; color: #3a3a3a; font-size: 22px; cursor: pointer}
+.navigation > a i{position: absolute; right: 6vw; top: 9.5vh; color: #3a3a3a; font-size: 22px; cursor: pointer}
 .navigation-list ul{margin-right: 10px}
 .navigation-list ul li a{color: #3a3a3a; text-decoration: none; transition: all .3s ease-in-out}
 .navigation-list ul li a:hover{color: #fe435b}
 .navigation-list ul li{font-weight: bold; font-size: 2.2em; padding-top: 20px}
+/* Start Style Social Media Div */
+.navigation .social-media{margin: 70px 50px 0 0; transition: .2s}
+.navigation .social-media a i{color: #3a3a3a; padding-left: 50px; font-size: 18px; transition: .2s}
+.navigation .social-media a i.fa1:hover{color: #bd081c}
+.navigation .social-media a i.fa2:hover{color: #0077b5}
+.navigation .social-media a i.fa3:hover{color: #c13584}
+.navigation .social-media a i.fa4:hover{color: #3b5998}
+.navigation .social-media a i.fa5:hover{color: #1da1f2}
+
 @media(min-width: 266px) and (max-width: 730px){
     .navigation{width: 100%}
     .navigation .navigation-btn{width: 500px}
@@ -154,3 +164,16 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 @media(min-width: 332px) and (max-width: 767px){
     .header{height: 580px}
 }
+@media(min-width: 360px) and (max-width: 410px){
+    .navigation .social-media a i{padding-left: 40px}
+}
+@media(min-width: 306px) and (max-width: 359px){
+    .navigation .social-media a i{padding-left: 30px}
+}
+@media(min-width: 266px) and (max-width: 305px){
+    .navigation .social-media a i{padding-left: 20px}
+}
+@media(min-width: 731px) and (max-width: 767px){
+    .navigation .social-media a i{padding-left: 27px}
+}
+/* End Style Social Media Div */

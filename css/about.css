@@ -13,13 +13,13 @@
 }
 
 /* Start About Title Section*/
-.about-section{padding-top: 80px; padding-bottom: 90px; background-color: #fff}
+.about-section{padding-top: 80px; padding-bottom: 120px; background-color: #fff}
 .about-section h2{color: #222; font-size: 3.2em}
 .about-section .about-pgph{font-size: 1.5em; padding-bottom: 50px; color: #9ca0af}
 .about-section .about-pgph-content{color: #9ca0af; line-height: 2; }
 .about-section .about-img img{width: 100%; height: 100%}
-.about-section .about-btn{border: 0; padding: 13px 35px; background-color: rgba(254, 64, 91, 0.79); color: #fff; font-weight: bold; margin-top: 47px}
-.about-section .about-btn:hover{color: rgba(254, 64, 91, 0.79)}
+.about-section .about-btn{border: 0; padding: 13px 35px; background-color: rgba(254, 64, 91, 0.90); color: #fff; font-weight: bold; margin-top: 47px; transition: all .2s ease-in-out}
+.about-section .about-btn:hover{background-color: rgba(254, 64, 91, 0.79)}
 @media(max-width: 991px){.about-section .about-img img{padding-bottom: 30px}}
 
 /* Start Mountains Section */
