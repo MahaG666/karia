@@ -1,0 +1,62 @@
+/* Start News Header */
+.news-header{background: url(../imgs/news.jpg) no-repeat center center; background-size: cover; height: 90vh}
+.news-content{position: absolute; top: 470px; right: 100px}
+.news-content .news-title h1{font-size: 3.8em}
+.news-content .news-list ul li{display: inline-block}
+.news-content .news-list ul a li{color: #c5c2c2; padding: 5px; text-decoration: none; transition: all .2s ease-in-out; font-weight: bold; font-size: 14px}
+.news-content .news-list ul a li:hover{color: rgba(254, 67, 91, .7)}
+.news-content .news-list ul li.transfer::after{content: '/'; margin-right: 3px}
+.news-list{margin-right: -41px}
+/*Start News Section */
+.news a {text-decoration: none}
+.news{background-color: #fff; padding-top: 90px}
+.news-post .news-title h2 a{color: #131a2f; padding-bottom: 10px; transition: all .3s ease-in-out}
+.news-post .news-title h2 a:hover{color: rgba(254, 64, 91)}
+.news-post .news-title span{color: #7d8293}
+.news-post .news-title span a{color: #7d8293; transition: all .3s ease-in-out}
+.news-post .news-title span a:last-of-type::before{content: '|'; margin-right: 3px; padding-left: 9px}
+.news-post .news-title span a:hover{color: rgba(254, 64, 91)}
+.news-post .news-img{position: relative}
+.news-post .news-img img{width: 100%; height: 100%; padding-top: 30px}
+.news-post .news-img .add-new{position: absolute; bottom: 18px; left: 20px; background-color: #f00; width: 42px; height: 42px; line-height: 45px; background-color: #fe3c52; transition: all .3s ease-in-out; cursor: pointer}
+.news-post .news-img .add-new:hover{opacity: .8}
+.add-new a i{color: #fff; font-size: 18px}
+.news-post .news-pgph {color: #7d8293; padding-top: 35px; line-height: 2; padding-bottom: 50px}
+/* Start Side Bar */
+.sidebar .aside-search input{border: solid 2px #dbdbdb; width: 100%; padding: 10px 0; margin-top: 25px; margin-bottom: 80px; transition: all .3s ease-in-out; padding-right: 10px}
+.sidebar .aside-search input::placeholder{color: #dbdbdb; padding-right: 1px}
+.sidebar .aside-search input:focus{border: solid 2px #fe3c52}
+.aside-featured .featured-img img{width: 100%}
+.aside-featured .aside-title{margin-bottom: 25px}
+.aside-featured .aside-title h2 a{color: #131a2f; transition: all .3s ease-in-out}
+.aside-featured .aside-title h2 a:hover{color: rgba(254, 64, 91)}
+.aside-featured .aside-title span{color: #7d8293}
+.aside-featured .aside-title span a{color: #7d8293; transition: all .3s ease-in-out}
+.aside-featured .aside-title span a:last-of-type::before{content: '|'; margin-right: 3px; padding-left: 9px}
+.aside-featured .aside-title span a:hover{color: rgba(254, 64, 91)}
+
+.sidebar .show-more, .sidebar .show-more2{background: url(../imgs/special_1.jpg) no-repeat center center; background-size: cover; height: 360px; width: 100%; padding-top: 15%; margin-bottom: 40px}
+.sidebar .show-more2{background: url(../imgs/special_4.jpg) no-repeat center center}
+.sidebar .show-more .show-Up{background: rgba(254, 64, 91, .80); color: #fff; width: 80%; height: 75%; margin-right: 10%} 
+.sidebar .show-more .show-Up .show-title p{padding-top: 8px; font-size: 70px}
+.sidebar .show-more .show-Up h3{margin-top: -20px; margin-bottom: 15px}
+.sidebar .show-more .show-Up p:nth-child(3){padding: 0 15px}
+.sidebar .show-more .show-Up .show-anc{width: 120px; height: 40px; background: rgba(19,26,47,1); margin: auto; line-height: 40px; margin-top: 20px; cursor: pointer; transition: .3s}
+.sidebar .show-more .show-Up .show-anc:hover{background:  rgba(19,26,47,0.8)}
+.show-Up .show-anc a{color: #fff}
+.sidebar .aside-qute{width: 50px; height: 50px; background-color: #fe3c52; margin: 60px auto 40px; line-height: 50px}
+.sidebar .aside-qute-text{font-size: 20px; color: #131a2f; font-style: italic}
+.sidebar .aside-qute-text span{color: #fe3c52}
+
+
+
+
+
+
+
+
+
+
+
+
+

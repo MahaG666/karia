@@ -3,7 +3,7 @@
 .home-content{position: absolute; top: 470px; right: 100px}
 .home-content .about-title h1{font-size: 3.8em; color: #c5c2c2}
 .home-content .about-list ul li{display: inline-block}
-.home-content .about-list ul li a{color: #c5c2c2; padding: 5px; text-decoration: none; transition: all .2s ease-in-out}
+.home-content .about-list ul li a{color: #c5c2c2; padding: 5px; font-weight: bold; text-decoration: none; transition: all .2s ease-in-out}
 .home-content .about-list ul li a:hover{color: rgba(254, 67, 91, .7)}
 .home-content .about-list ul li.transfer::after{content: '/'; margin-right: 3px}
 .about-list{margin-right: -41px}

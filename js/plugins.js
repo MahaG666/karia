@@ -102,12 +102,6 @@ $(function(){
             }, 200);
         }
     });
-    
-    
-    
-    
-    
-    
     $('.menu-icon').on('click', function(){
         $('.navigation').slideToggle().animate({
            left : 0 + 'px' 
