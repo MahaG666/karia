@@ -93,41 +93,7 @@ $(function(){
             sendMessage();
         }
     });
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+// Start Slick 
     $('.slider').slick({
         centerMode: true,
         centerPadding: '60px',
@@ -154,10 +120,3 @@ $(function(){
         ]
     });
 });
-
-
-
-
-
-
-

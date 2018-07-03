@@ -25,7 +25,7 @@
 /* Start Side Bar */
 .sidebar .aside-search input{border: solid 2px #dbdbdb; width: 100%; padding: 10px 0; margin-top: 25px; margin-bottom: 80px; transition: all .3s ease-in-out; padding-right: 10px}
 .sidebar .aside-search input::placeholder{color: #dbdbdb; padding-right: 1px}
-.sidebar .aside-search input:focus{border: solid 2px #fe3c52}
+.sidebar .aside-search input:hover, .sidebar .aside-search input:focus{border: solid 2px #fe3c52}
 .aside-featured .featured-img img{width: 100%}
 .aside-featured .aside-title{margin-bottom: 25px}
 .aside-featured .aside-title h2 a{color: #131a2f; transition: all .3s ease-in-out}

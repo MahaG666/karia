@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Karia</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -138,7 +139,7 @@
                      <div class="news-img">
                          <img src="imgs/news_1.jpg" alt="">
                          <div class="add-new text-center">
-                             <a href="#"><i class="fa fa-plus"></i></a>
+                             <a href="#"><i class="fa fa-plus" style="color: #fff; font-size: 18px"></i></a>
                          </div>
                      </div>
                      <div class="news-pgph">
@@ -154,7 +155,7 @@
                      <div class="news-img">
                          <img src="imgs/news_2.jpg" alt="">
                          <div class="add-new text-center">
-                             <a href="#"><i class="fa fa-plus"></i></a>
+                             <a href="#"><i class="fa fa-plus" style="color: #fff; font-size: 18px"></i></a>
                          </div>
                      </div>
                      <div class="news-pgph">
@@ -170,7 +171,7 @@
                      <div class="news-img">
                          <img src="imgs/news_3.jpg" alt="">
                          <div class="add-new text-center">
-                             <a href="#"><i class="fa fa-plus"></i></a>
+                             <a href="#"><i class="fa fa-plus" style="color: #fff; font-size: 18px"></i></a>
                          </div>
                      </div>
                      <div class="news-pgph">
@@ -240,7 +241,7 @@
 <!-- Start Navigation Div-->
   <div class="navigation hidden-lg hidden-md hidden-sm">
       <input class="navigation-btn" type="search">
-      <a href="home.html"><i class="fa fa-search"></i></a>
+      <a href="home.html"><i class="fa fa-search" style="position: absolute; right: 6vw; top: 9.5vh; color: #3a3a3a; font-size: 22px; cursor: pointer"></i></a>
       <div class="navigation-list">
           <ul class="list-unstyled">
               <li><a href="home.html">الرئيسية</a></li>
@@ -250,17 +251,17 @@
           </ul>
       </div>
       <div class="social-media">
-          <a href="#"><i class="fa fa-pinterest"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
   </div>
 <!-- End Navigation Div-->
 <!-- Start Div Scroll -->
    <div class="scroll" title="Scroll To Top">
-       <i class="fa fa-arrow-up"></i>
+       <i class="fas fa-arrow-up" style="margin-top: 6px; font-size: 20px"></i>
    </div>
 <!-- End Div Scroll -->
 <!-- Start Chat Section -->
@@ -271,7 +272,7 @@
           </div>
           <div class="chat-title-icon">
               <a href="#"><i class="fa fa-minus"></i></a>
-              <a href="#"><i class="fa fa-gear"></i></a>  
+              <a href="#"><i class="fas fa-cog"></i></a>  
           </div>
        </div>
        <div class="chat-content">
@@ -284,20 +285,30 @@
        </div>
        <div class="chat-send">
           <div class="emoje">   
-              <a href="#"><i class="fa fa-smile-o"></i></a>
+              <a href="#"><i class="far fa-smile"></i></a>
           </div>
-          <input class="chat-text" type="text" placeholder="اكتب رسالتك..." onkeypress="if(event.keyCode == 13){addQuestion()}">
+          <input class="chat-text" type="text" placeholder="اكتب رسالتك...">
           <div class="paperclip">    
               <a href="#"><i class="fa fa-paperclip"></i></a>
           </div>
        </div>
    </div>
 <!-- End Chat Section -->
+<!-- Start Chat Visible In The Small Screen -->
+    <div class="chat-visible-xs hidden-lg hidden-md hidden-sm" title="Open Chat">
+        <a href="#">
+            <i class="fab fa-rocketchat"></i>
+        </a>
+    </div>
+<!-- End Chat Visible In The Small Screen -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/regular.js"></script>
+    <script src="js/solid.js"></script>
 </body>
 </html>

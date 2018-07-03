@@ -28,7 +28,7 @@
 .mountains-content h2{font-size: 3.5em; padding-bottom: 6px}
 .mountains-content p:nth-of-type(1){font-size: 1.5em; color: #a9adb9; padding-bottom: 30px}
 .mountains-content p:nth-of-type(2){font-size: 15px; padding: 0px 100px; line-height: 2; padding-bottom: 70px}
-.mountains-icon i{font-size: 55px; padding-bottom: 50px}
+/*.mountains-icon i{font-size: 55px; padding-bottom: 50px}*/
 .mountains-icon p{font-size: 35px; font-family: 'Montserrat', sans-serif;}
 .mountains-icon h3{padding-bottom: 80px}
 @media(max-width: 767px){.mountains-content p:nth-of-type(2){padding: 0px 30px 40px}}

@@ -24,7 +24,3 @@ function initMap(){
         map : map
     });
     }
-/*function addQuestion(){
-    document.getElementsByClassName('chat-content')[0].innerHTML += '<div class="chat-forward">' + document.getElementsByClassName('chat-text')[0].value + '</div>';
-    document.getElementsByClassName('chat-text').val(' ');
-}*/
