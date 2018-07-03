@@ -1,4 +1,4 @@
-body{direction: rtl; padding-top: 66px; color: #ddd; position: }
+body{direction: rtl; padding-top: 66px; color: #ddd}
 *::selection{color: #fff; background: rgba(254, 64, 91, 0.79)}
 .hideElement{transform: scale(1.1); transition: all .3s ease-in-out}
 .scrolled{opacity: .8}
@@ -99,7 +99,7 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 /* END SLICK */
 
 /* Start Footer Section */
-.footer{background-color: #080d1d}
+.footer{background-color: #080d1d; position: relative}
 .footer h3{color: #fff; padding-top: 10vh; padding-bottom: }
 .footer p:nth-of-type(1){margin-bottom: 30px}
 .footer p:nth-of-type(2){color: #7d8293; line-height: 2.5; margin-bottom: 40px}
@@ -133,7 +133,7 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
     
 }
 /* Div Scroll */
-.scroll{position: fixed; width: 40px; height: 40px; background-color: rgba(254, 67, 91, .7); right: 20px; bottom: 20px; text-align: center; line-height: 42px;border-radius: 50%; cursor: pointer; transition: .2s; display: none}
+.scroll{position: fixed; width: 40px; height: 40px; background-color: rgba(254, 67, 91, .7); left: 20px; bottom: 20px; text-align: center; line-height: 42px;border-radius: 50%; cursor: pointer; transition: .2s; display: none}
 .scroll:hover{background-color:  rgba(254, 67, 91)}
 .scroll i{font-size: 20px; color: #ddd}
 
@@ -178,3 +178,27 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
     .navigation .social-media a i{padding-left: 25px}
 }
 /* End Style Social Media Div */
+/* Start Chat Section */
+.chat{width:27%; border-top-right-radius: 3px; border-top-left-radius: 3px; overflow: hidden; position: fixed; right: 20px; bottom: 0; box-shadow: 1px 5px 10px 1px #555 ; z-index: 888}
+.chat .chat-title{background-color: #fe3c52; cursor: pointer}
+.chat .chat-title .chat-title-content{display: inline-block; color: #fff; padding: 5px 15px 10px 5px}
+.chat .chat-title .chat-title-icon{display: inline-block; float: left; margin-top:  21px; padding: 5px 20px; font-size: 18px}
+.chat .chat-title .chat-title-icon a{color: #fff}
+.chat .chat-title .chat-title-icon a:first-child{padding-left: 10px}
+.chat .chat-content{height: 400px; background-color: #fff; padding: 15px 8px; color: #484343; overflow-y: scroll; display: none}
+.chat .chat-content .chat-forward, .chat .chat-content .chat-reply{width: calc(100% - 150px); background-color: transparent; border: 1px solid #484343; border-radius:12px 12px 0 12px; padding: 8px}
+.chat .chat-content .chat-forward:not(:first-of-type){margin-top: 10px}
+.chat .chat-content .chat-reply{border-radius:12px 12px 12px 0; margin-right: 147px; margin-top: 10px; border: 1px solid #d63144}
+.chat .chat-send{width: 100%; padding: 10px 0; background-color: #eceaea; display: none}
+.chat .chat-send > div{display: inline-block}
+.chat .chat-send a{color: #333}
+.chat .chat-send .paperclip, .chat .chat-send .emoje{font-size: 18px; padding: 5px 12px 0px 10px; width: 5%}
+.chat .chat-send input[type="text"]{width: 75%; margin-right: 20px; color: #333; border: 0; box-shadow: 0; height: 37px; cursor: text; padding-right: 13px; border-radius: 8px; transition: all .5s ease-in-out}
+.chat .chat-send input[type="text"]::placeholder{padding-right: 8px}
+.chat .chat-send input[type="text"]:hover{box-shadow: 0px 0px 10px -2px inset #b52838}
+.chat-hide{color: #fff; background-color: #fe3c52; padding: 20px 0; line-height: 2; cursor: pointer; display: none}
+.chat-hide p{font-size: 15px}
+/* End Chat Section */
+
+
+

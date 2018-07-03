@@ -3,56 +3,7 @@ $(function(){
     $(window).on('scroll', function(){
         var navbar = $('.navbar');
         navbar.filter('scrolled') && $(window).scrollTop() >= navbar.height() ? navbar.addClass('scrolled') : navbar.removeClass('scrolled');
-    });
-    $('.search').on('click', function(){
-        $('.search-div').slideToggle();
-        $('.search-div').css({
-            position : 'fixed',
-            zIndex : 2
-        });
-    });
-    
-    $('.menu-icon').click(function(){
-        $('nav li').toggleClass('hideElement').toggleClass('hide');
-    });
-    $('.slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
-        });
-    $(window).on('scroll', function(){
-        if($(window).scrollTop() >= 650){
-            $('.scroll').show();
-        }else{
-            $('.scroll').fadeOut();
-        }
-    });
-    $('.scroll').on('click', function(){
-        $('html,body').animate({scrollTop : 0}, 1500);
-    });
-    
-    
-    $(window).scroll(function(){
+        
         if($(window).scrollTop() >= 1140){
             var interval = setInterval(function(){
             var progress1 = $('.progress1');
@@ -97,15 +48,110 @@ $(function(){
                         clearInterval(interval4);
                     }
             }, 200);
+        }  
+        
+        if($(window).scrollTop() >= 650){
+            $('.scroll').show();
+        }else{
+            $('.scroll').fadeOut();
         }
+    });
+    $('.search').on('click', function(){
+        $('.search-div').slideToggle();
+        $('.search-div').css({
+            position : 'fixed',
+            zIndex : 2
+        });
+    });
+    
+    $('.menu-icon').click(function(){
+        $('nav li').toggleClass('hideElement').toggleClass('hide');
+    });
+    $('.scroll').on('click', function(){
+        $('html,body').animate({scrollTop : 0}, 1500);
     });
     $('.menu-icon').on('click', function(){
         $('.navigation').slideToggle().animate({
            left : 0 + 'px' 
         }, 800); 
     });
-    $(window).scroll(function(){
-        console.log($(window).scrollTop());
+    
+    $('.chat-title-icon').find('a:first-child').on('click', function(){
+        $('.chat-content, .chat-send').slideToggle();
+    });
+    function sendMessage(){
+        var addMessage = $('#add-message').val();
+        if(addMessage == ' '){
+            return false;
+        }else{
+            $('<div class="chat-forward">' + addMessage + '</div>').appendTo($('.chat-content'));
+            $('#add-message').val('');
+        }
+    }
+    $('#add-message').on('keypress', function(event){
+        if(event.keyCode == 13){
+            sendMessage();
+        }
+    });
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    $('.slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });
 
