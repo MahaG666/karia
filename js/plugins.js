@@ -4,7 +4,7 @@ $(function(){
         var navbar = $('.navbar');
         navbar.filter('scrolled') && $(window).scrollTop() >= navbar.height() ? navbar.addClass('scrolled') : navbar.removeClass('scrolled');
         
-        if($(window).scrollTop() >= 1140){
+/*        if($(window).scrollTop() >= $('.mountains').offset().top){
             var interval = setInterval(function(){
             var progress1 = $('.progress1');
             var number = parseInt(progress1.html());
@@ -48,10 +48,10 @@ $(function(){
                         clearInterval(interval4);
                     }
             }, 200);
-        }  
+        } */ 
         
         if($(window).scrollTop() >= 650){
-            $('.scroll').show();
+            $('.scroll').fadeIn();
         }else{
             $('.scroll').fadeOut();
         }
@@ -93,30 +93,50 @@ $(function(){
             sendMessage();
         }
     });
-// Start Slick 
-    $('.slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
+// Start Slider 
+    $('.thumbnails img').on('click', function(){
+        $(this).addClass('select').siblings().removeClass('select');
+        $('.main-img img').hide().attr('src', $(this).attr('src')).fadeIn(300);
+    });
+    $('.main-img .fa-chevron-right').on('click', function(){
+        if($('.thumbnails .select').is(':last-child')){
+            $('.thumbnails img').eq(0).click();
+        }else{
+            $('.thumbnails .select').next().click();
+        }
+        
     });
 });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
