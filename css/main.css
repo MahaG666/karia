@@ -88,8 +88,8 @@ nav li > a:hover, nav li > a:focus{color: #fe435b}
 .slider-container .main-img{width: 100%; height: 550px; padding-bottom: 10px}
 .main-img img{width: 100%; height: 100%; position: relative}
 .slider-container .thumbnails{width: 100%; overflow: hidden; padding: 5px}
-.slider-container .thumbnails img {width: 9.82%; float: left; opacity: .6; cursor: pointer; transition: all .3s ease-in-out}
-.slider-container .thumbnails img:not(:last-child){margin-right: .2%}
+.slider-container .thumbnails img {float: left; opacity: .6; cursor: pointer; transition: all .3s ease-in-out}
+.thumbnails img:last-child{margin-right: 0 !important}
 .slider-container .thumbnails img.select{opacity: 1; border: 2px solid #fe3c52}
 .main-img .fa-chevron-right{position: absolute; z-index: 2; font-size: 50px; color: #fff; margin-top: 250px; left: 90vw; background-color: #fe3c52; padding: 8px; border-radius: 20px; cursor: pointer}
 /* End Slider*/

@@ -94,6 +94,15 @@ $(function(){
         }
     });
 // Start Slider 
+    var numOfThumnails = $('.thumbnails').children().length,
+        marginBetween = .2,
+        totalMargin = (numOfThumnails - 1) * marginBetween,
+        thumbnailsImgWidth = (100 - totalMargin) / numOfThumnails;
+    $('.thumbnails img').css({
+       'width' : thumbnailsImgWidth + '%',
+       'margin-right' : marginBetween + '%'
+    });
+    console.log(numOfThumnails);
     $('.thumbnails img').on('click', function(){
         $(this).addClass('select').siblings().removeClass('select');
         $('.main-img img').hide().attr('src', $(this).attr('src')).fadeIn(300);
